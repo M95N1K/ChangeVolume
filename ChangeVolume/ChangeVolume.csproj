@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>b_favico.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Ico\b_favico.ico" />
+    <None Remove="Resources\Ico\o_favico.ico" />
+    <None Remove="Resources\Ico\w_favico.ico" />
+    <None Remove="Resources\image\close_window_01.png" />
+    <None Remove="Resources\image\close_window_01_red.png" />
+    <None Remove="Resources\image\minimize_window_01.png" />
+    <None Remove="Resources\image\minimize_window_01_blue.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    <PackageReference Include="HotKeyLibrary" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="SetAppVolume" Version="1.1.1" />
+    <PackageReference Include="System.Interactive.Async" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Ico\b_favico.ico" />
+    <Resource Include="Resources\Ico\o_favico.ico" />
+    <Resource Include="Resources\Ico\w_favico.ico" />
+    <Resource Include="Resources\image\close_window_01.png" />
+    <Resource Include="Resources\image\close_window_01_red.png" />
+    <Resource Include="Resources\image\minimize_window_01.png" />
+    <Resource Include="Resources\image\minimize_window_01_blue.png" />
+  </ItemGroup>
+
+</Project>
