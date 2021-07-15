@@ -6,6 +6,9 @@
     <UseWPF>true</UseWPF>
     <ApplicationIcon>b_favico.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.0.1</Version>
+    <Company />
+    <Authors>MeMeMe</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
-    <PackageReference Include="HotKeyLibrary" Version="1.0.3" />
+    <PackageReference Include="HotKeyLibrary" Version="1.0.4" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="SetAppVolume" Version="1.1.1" />
     <PackageReference Include="System.Interactive.Async" Version="5.0.0" />
